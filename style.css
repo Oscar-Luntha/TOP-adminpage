@@ -190,3 +190,8 @@ h3 {
 .trending li {
     padding: 5px;
 }
+.sidebar li {
+    display: flex ;
+    align-content: center;
+    gap: 10px;
+}

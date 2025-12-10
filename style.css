@@ -136,6 +136,13 @@ section {
     border-left: 5px solid #efb428;
     border-radius: 3px;
     background-color: #ffffff;
-    padding: 5px 10px;
+    padding: 20px;
     box-shadow: 0 0 5px #808080;
+    margin-bottom: 5%;
+}
+.project-card p {
+    font-size: small;
+    color: #3a3d41;
+    letter-spacing: 1px;
+    line-height: 20px;
 }

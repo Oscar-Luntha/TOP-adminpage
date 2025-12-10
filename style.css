@@ -4,13 +4,14 @@
     box-sizing: border-box;
 }
 body {
-    background-color: rgba(225, 232, 240);
+    background-color: #e1e8f0;
     display: grid;
     height: 100dvh;
     grid-template-columns: 1fr 4fr;
 }
 header {
     grid-column: 2 / 3;
+    grid-row: 1 /1;
     height: min-content;
     background-color: white;
     display: grid;
@@ -24,7 +25,7 @@ header {
     display: flex;
 }
 input{
-    background-color: rgba(225, 232, 240);
+    background-color: #e1e8f0;
     width: clamp(300px, 80% , 600px);
     height: 30px;
     padding: 12px;
@@ -43,16 +44,17 @@ img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    box-shadow: 0 0 5px gray;
+    box-shadow: 0 0 5px #808080;
 }
 header .user-profile + div {
     display: flex;
     grid-column: span 3;
     padding: 10px 0px;
+    height: min-content;
+    justify-content: space-between;
 }
 .user-greeting {
     display: flex;
-    border: 2px solid black;
     height: min-content;
     gap: 20px;
     align-items: center;
@@ -62,4 +64,19 @@ header .user-profile + div {
 .user-greeting img {
     height: 60px;
     width: 60px;
+}
+.action-buttons{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.action-buttons button{
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    background-color: #1892d3;
+    border: none;
 }

@@ -1,15 +1,17 @@
 *{
     margin : 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
     background-color: rgba(225, 232, 240);
     display: grid;
+    height: 100dvh;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 3fr;
 }
 header {
     grid-column: 2 / 3;
+    height: min-content;
     background-color: white;
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -42,4 +44,22 @@ img {
     height: 40px;
     border-radius: 50%;
     box-shadow: 0 0 5px gray;
+}
+header .user-profile + div {
+    display: flex;
+    grid-column: span 3;
+    padding: 10px 0px;
+}
+.user-greeting {
+    display: flex;
+    border: 2px solid black;
+    height: min-content;
+    gap: 20px;
+    align-items: center;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.user-greeting img {
+    height: 60px;
+    width: 60px;
 }

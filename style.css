@@ -110,3 +110,12 @@ nav {
 nav ul li{
     margin-top: 10px;
 }
+section {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+.projects{
+    grid-column: 1 / 2;
+    grid-row:  1 / 3;
+}

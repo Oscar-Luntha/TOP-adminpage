@@ -26,6 +26,12 @@ header {
 .search {
     width: 100%;
     display: flex;
+    align-content: center;
+    gap: 10px;
+}
+.search > div {
+    display: grid;
+    align-items: center;
 }
 input{
     background-color: #e1e8f0;
@@ -37,11 +43,15 @@ input{
     border: none;
     border-radius: 8px;
 }
+input:focus{
+    outline: 2px solid #1892d3;
+}
 .user-profile{
     display: flex;
     gap: 15px;
     padding: 5px;
     align-items: center;
+    justify-content: end;
 }
 img {
     width: 40px;
@@ -72,6 +82,7 @@ header .user-profile + div {
     display: flex;
     gap: 20px;
     align-items: center;
+    padding-right: 20px;
 }
 .action-buttons button{
     width: 120px;
@@ -188,10 +199,22 @@ h3 {
     margin-bottom: 10px;
 }
 .trending li {
-    padding: 5px;
+    padding: 7px;
 }
 .sidebar li {
     display: flex ;
     align-content: center;
-    gap: 10px;
+    gap: 30px;
+}
+.sidebar > div {
+    display: flex;
+    align-content: center;
+    gap: 16px;
+}
+.card-icons{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    padding: 20px 0px;
 }
